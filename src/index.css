@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Trivia Game Design System - Vibrant and engaging */
+
+@layer base {
+  :root {
+    /* Game-themed color palette */
+    --background: 240 20% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 240 15% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 240 15% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Vibrant primary - Electric Purple */
+    --primary: 270 91% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 270 100% 80%;
+
+    /* Game UI colors */
+    --secondary: 240 15% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 240 12% 18%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 195 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Success and Error */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --error: 0 84% 60%;
+    --error-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 12% 20%;
+    --input: 240 12% 20%;
+    --ring: 270 91% 65%;
+
+    /* Game-specific colors */
+    --warning: 45 93% 58%;
+    --warning-foreground: 0 0% 100%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(270 91% 65%), hsl(270 100% 80%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 50%));
+    --gradient-error: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 70%));
+    --gradient-bg: linear-gradient(135deg, hsl(240 20% 6%), hsl(240 15% 10%));
+    
+    /* Shadows and effects */
+    --shadow-glow: 0 0 40px hsl(270 91% 65% / 0.3);
+    --shadow-success: 0 0 30px hsl(142 76% 36% / 0.4);
+    --shadow-error: 0 0 30px hsl(0 84% 60% / 0.4);
+    
+    --radius: 1rem;
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    /* Keep dark mode minimal - game is inherently dark themed */
+    --background: 240 20% 6%;
+    --foreground: 210 40% 98%;
+    /* Rest stays the same for dark theme */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom gradients */
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .bg-gradient-success {
+    background: var(--gradient-success);
+  }
+  
+  .bg-gradient-error {
+    background: var(--gradient-error);
+  }
+  
+  .bg-gradient-bg {
+    background: var(--gradient-bg);
+  }
+
+  /* Custom shadows */
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .shadow-success {
+    box-shadow: var(--shadow-success);
+  }
+  
+  .shadow-error {
+    box-shadow: var(--shadow-error);
+  }
+}
