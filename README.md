@@ -1,32 +1,37 @@
-# 🎮 QuizMaster - Multiplayer Trivia Quiz Game
+# 🎮 QuizMaster - Interactive Trivia Quiz Game
 
-A modern, interactive trivia quiz game built with React and powered by Supabase. Test your knowledge across multiple categories with customizable difficulty levels and time constraints.
+A modern, fast-paced trivia quiz game built with React and TypeScript. Test your knowledge across multiple categories with customizable difficulty levels, timed questions, and competitive scoring. Challenge yourself and climb the leaderboard!
 
 ## ✨ Features
 
 ### 🎯 Current Features
 - **Single Player Mode** - Play trivia questions solo with immediate feedback
-- **Multiple Categories** - Choose from Science, History, Sports, Entertainment, Geography, and more
-- **Customizable Settings** - Select difficulty level, number of questions, and time per question
+- **7 Categories** - Technology, Science, Geography, Sports, Arts, Gaming, and Mixed
+- **Customizable Settings** - Select difficulty (Easy/Medium/Hard/Mixed), number of questions (5-20), and time per question (10-30s)
 - **Dynamic Timer** - Visual countdown timer with progress indication
-- **Responsive Design** - Beautiful UI that works on desktop and mobile
-- **Real-time Scoring** - Track your performance with detailed statistics
+- **Smart Scoring System** - Points based on speed + streak bonuses for consecutive correct answers
+- **Responsive Design** - Beautiful gradient UI that works perfectly on desktop and mobile
+- **Real-time Statistics** - Live score tracking, streak counter, and progress indicators
+- **Immediate Feedback** - Visual indicators for correct/incorrect answers with smooth animations
 
 ### 🚀 Planned Features
 - **Multiplayer Mode** - Real-time multiplayer battles with friends
 - **Global Leaderboards** - Compete with players worldwide
-- **User Profiles** - Track your progress and achievements
-- **Question Database** - Expanding collection of trivia questions
+- **User Authentication** - Sign up, login, and user profiles
+- **Expanded Question Database** - More categories and difficulty levels
+- **Achievement System** - Unlock badges and rewards for milestones
+- **Social Features** - Friend system and challenges
 
 ## 🛠 Tech Stack
 
 - **Frontend**: React 18 + TypeScript
 - **Styling**: Tailwind CSS + shadcn/ui components
 - **Build Tool**: Vite
-- **Backend**: Supabase (Database, Authentication, Real-time)
 - **Routing**: React Router DOM
-- **State Management**: React Hooks
+- **State Management**: React Hooks (useState, useEffect, useCallback)
 - **Icons**: Lucide React
+- **Development**: ESLint, TypeScript strict mode
+- **UI Components**: Custom design system with gradient backgrounds and animations
 
 ## 🚀 Getting Started
 
@@ -47,20 +52,12 @@ A modern, interactive trivia quiz game built with React and powered by Supabase.
    npm install
    ```
 
-3. **Environment Setup**
-   The project includes environment variables for Supabase integration:
-   ```env
-   VITE_SUPABASE_PROJECT_ID="zyiqsgcsejwrohagetgk"
-   VITE_SUPABASE_URL="https://zyiqsgcsejwrohagetgk.supabase.co"
-   VITE_SUPABASE_PUBLISHABLE_KEY="your-publishable-key"
-   ```
-
-4. **Start the development server**
+3. **Start the development server**
    ```bash
    npm run dev
    ```
 
-5. **Open your browser**
+4. **Open your browser**
    Navigate to `http://localhost:8080` to start playing!
 
 ## 📁 Project Structure
@@ -82,47 +79,47 @@ src/
 │   └── NotFound.tsx              # 404 page
 ├── types/
 │   └── game.ts                    # TypeScript type definitions
-├── integrations/
-│   └── supabase/                  # Supabase client configuration
+├── hooks/                         # Custom React hooks
 └── lib/
     └── utils.ts                   # Utility functions
 ```
 
 ## 🎮 How to Play
 
-1. **Choose Your Category** - Select from various knowledge categories or play with mixed questions
-2. **Customize Settings** - Set your preferred difficulty, number of questions, and time limit
+1. **Choose Your Category** - Select from 7 categories (Technology, Science, Geography, Sports, Arts, Gaming) or play with mixed questions
+2. **Customize Settings** - Set your preferred difficulty (Easy/Medium/Hard/Mixed), number of questions (5-20), and time per question (10-30s)
 3. **Start Playing** - Answer questions within the time limit to score points
-4. **Track Progress** - Monitor your score, streak, and remaining questions
-5. **View Results** - See your final score and performance statistics
+4. **Earn Points** - Get more points for faster answers and consecutive correct answers (streaks)
+5. **Track Progress** - Monitor your live score, current streak, and question progress
+6. **View Results** - See your final score, accuracy percentage, and performance summary
 
 ## 🎨 Design System
 
-The project uses a custom design system built with Tailwind CSS:
-- **Semantic color tokens** for consistent theming
-- **Gradient backgrounds** for visual appeal
-- **Smooth animations** for enhanced user experience
-- **Responsive design** for all screen sizes
+The project features a modern, custom design system built with Tailwind CSS:
+- **Gradient Backgrounds** - Beautiful gradient overlays and glass-morphism effects
+- **Semantic Color Tokens** - Consistent theming with primary, accent, success, and error colors
+- **Smooth Animations** - Slide-in effects, hover transitions, and loading states
+- **Responsive Design** - Mobile-first approach that works on all screen sizes
+- **Interactive Elements** - Hover effects, focus states, and visual feedback
+- **Typography** - Clean, readable fonts with proper hierarchy
 
 ## 🚀 Deployment
 
-### Deploy with Lovable
-1. Open your [Lovable project](https://lovable.dev/projects/017233ae-5193-43af-975e-c880bdc52910)
-2. Click "Share" → "Publish"
-3. Your app will be live at `yourapp.lovable.app`
-
-### Deploy Elsewhere
+### Deploy to Production
 1. Build the project: `npm run build`
-2. Deploy the `dist` folder to your preferred hosting platform
+2. Deploy the `dist` folder to your preferred hosting platform (Vercel, Netlify, GitHub Pages, etc.)
+3. The app is a static SPA, so it works with any static hosting service
 
 ## 🔮 Roadmap
 
-- [ ] **Multiplayer Implementation** - Real-time multiplayer lobbies
-- [ ] **User Authentication** - Sign up, login, and user profiles
-- [ ] **Global Leaderboards** - Compete with players worldwide  
-- [ ] **Question Expansion** - More categories and difficulty levels
-- [ ] **Achievement System** - Unlock badges and rewards
-- [ ] **Social Features** - Friend system and challenges
+- [ ] **Multiplayer Implementation** - Real-time multiplayer lobbies with WebSocket integration
+- [ ] **User Authentication** - Sign up, login, and user profiles with persistent data
+- [ ] **Global Leaderboards** - Compete with players worldwide with ranking system
+- [ ] **Question Expansion** - More categories, difficulty levels, and question types
+- [ ] **Achievement System** - Unlock badges, rewards, and milestone celebrations
+- [ ] **Social Features** - Friend system, challenges, and sharing capabilities
+- [ ] **Question Editor** - Allow users to create and submit their own questions
+- [ ] **Tournament Mode** - Bracket-style competitions with elimination rounds
 
 ## 🤝 Contributing
 
@@ -138,10 +135,21 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🔗 Links
 
-- **Live Demo**: [Your deployed app URL]
-- **Lovable Project**: https://lovable.dev/projects/017233ae-5193-43af-975e-c880bdc52910
-- **Supabase Dashboard**: https://supabase.com/dashboard/project/zyiqsgcsejwrohagetgk
+- **Live Demo**: [Deploy to see your app in action!]
+- **GitHub Repository**: [Your repository URL]
+
+## 📸 Screenshots
+
+*Add screenshots of your app here to showcase the beautiful UI and gameplay*
+
+## 🏆 Key Features Showcase
+
+- **Smart Scoring**: Points = (Time Remaining × 10) + (Streak × 50)
+- **Category Variety**: 7 different knowledge areas to choose from
+- **Responsive Design**: Seamless experience across all devices
+- **Modern UI**: Gradient backgrounds, smooth animations, and intuitive navigation
+- **Type Safety**: Full TypeScript implementation for robust development
 
 ---
 
-Built with ❤️ using [Lovable](https://lovable.dev)
+Built with ❤️ using React and TypeScript
