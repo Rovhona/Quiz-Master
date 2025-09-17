@@ -6,7 +6,7 @@ A modern, fast-paced trivia quiz game built with React and TypeScript. Test your
 
 ### 🎯 Current Features
 - **Single Player Mode** - Play trivia questions solo with immediate feedback
-- **7 Categories** - Technology, Science, Geography, Sports, Arts, Gaming, and Mixed
+- **8 Categories** - Technology, Science, Geography, Sports, Arts, Gaming, Cristiano Ronaldo, and Mixed
 - **Customizable Settings** - Select difficulty (Easy/Medium/Hard/Mixed), number of questions (5-20), and time per question (10-30s)
 - **Dynamic Timer** - Visual countdown timer with progress indication
 - **Smart Scoring System** - Points based on speed + streak bonuses for consecutive correct answers
@@ -86,7 +86,7 @@ src/
 
 ## 🎮 How to Play
 
-1. **Choose Your Category** - Select from 7 categories (Technology, Science, Geography, Sports, Arts, Gaming) or play with mixed questions
+1. **Choose Your Category** - Select from 8 categories (Technology, Science, Geography, Sports, Arts, Gaming, Cristiano Ronaldo) or play with mixed questions
 2. **Customize Settings** - Set your preferred difficulty (Easy/Medium/Hard/Mixed), number of questions (5-20), and time per question (10-30s)
 3. **Start Playing** - Answer questions within the time limit to score points
 4. **Earn Points** - Get more points for faster answers and consecutive correct answers (streaks)
@@ -113,7 +113,7 @@ The project features a modern, custom design system built with Tailwind CSS:
 ## 🔮 Roadmap
 
 - [ ] **Multiplayer Implementation** - Real-time multiplayer lobbies with WebSocket integration
-- [ ] **User Authentication** - Sign up, login, and user profiles with persistent data
+
 - [ ] **Global Leaderboards** - Compete with players worldwide with ranking system
 - [ ] **Question Expansion** - More categories, difficulty levels, and question types
 - [ ] **Achievement System** - Unlock badges, rewards, and milestone celebrations
@@ -145,7 +145,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🏆 Key Features Showcase
 
 - **Smart Scoring**: Points = (Time Remaining × 10) + (Streak × 50)
-- **Category Variety**: 7 different knowledge areas to choose from
+- **Category Variety**: 8 different knowledge areas to choose from, including the exclusive Cristiano Ronaldo category
 - **Responsive Design**: Seamless experience across all devices
 - **Modern UI**: Gradient backgrounds, smooth animations, and intuitive navigation
 - **Type Safety**: Full TypeScript implementation for robust development
