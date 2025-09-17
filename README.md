@@ -1,4 +1,4 @@
-# 🎮 QuizMaster - Interactive Trivia Quiz Game
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5b1a0f7f-fc4e-467e-8b86-602e73eaaec9" /># 🎮 QuizMaster - Interactive Trivia Quiz Game
 
 A modern, fast-paced trivia quiz game built with React and TypeScript. Test your knowledge across multiple categories with customizable difficulty levels, timed questions, and competitive scoring. Challenge yourself and climb the leaderboard!
 
@@ -113,7 +113,6 @@ The project features a modern, custom design system built with Tailwind CSS:
 ## 🔮 Roadmap
 
 - [ ] **Multiplayer Implementation** - Real-time multiplayer lobbies with WebSocket integration
-
 - [ ] **Global Leaderboards** - Compete with players worldwide with ranking system
 - [ ] **Question Expansion** - More categories, difficulty levels, and question types
 - [ ] **Achievement System** - Unlock badges, rewards, and milestone celebrations
@@ -135,12 +134,14 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🔗 Links
 
-- **Live Demo**: [Deploy to see your app in action!]
-- **GitHub Repository**: [Your repository URL]
+- **Live Demo**: [(https://quiz-master-sooty.vercel.app/)]
+
 
 ## 📸 Screenshots
 
-*Add screenshots of your app here to showcase the beautiful UI and gameplay*
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b95dda07-045f-4350-a2de-f69945a4a69d" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c2f7209e-ccc1-490f-801b-dee35e2d1e49" />
+
 
 ## 🏆 Key Features Showcase
 
@@ -152,4 +153,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Built with ❤️ using React and TypeScript
+Built with ❤️ BY Rovhona Mudau using React and TypeScript
