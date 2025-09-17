@@ -1,4 +1,5 @@
-<img width="1800" height="900" alt="image" src="https://github.com/user-attachments/assets/5b1a0f7f-fc4e-467e-8b86-602e73eaaec9" /># 🎮 QuizMaster - Interactive Trivia Quiz Game
+<img width="766" height="851" alt="Screenshot (225)" src="https://github.com/user-attachments/assets/102e7a80-8578-4f94-b5b9-0b25ccbc36fa" />
+# 🎮 QuizMaster - Interactive Trivia Quiz Game
 
 A modern, fast-paced trivia quiz game built with React and TypeScript. Test your knowledge across multiple categories with customizable difficulty levels, timed questions, and competitive scoring. Challenge yourself and climb the leaderboard!
 
@@ -136,8 +137,10 @@ The project features a modern, custom design system built with Tailwind CSS:
 
 ## 📸 Screenshots
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b95dda07-045f-4350-a2de-f69945a4a69d" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c2f7209e-ccc1-490f-801b-dee35e2d1e49" />
+<img width="1180" height="834" alt="Screenshot (227)" src="https://github.com/user-attachments/assets/22a1a83c-aea7-4011-a591-8ead61d310e7" />
+
+<img width="766" height="851" alt="Screenshot (225)" src="https://github.com/user-attachments/assets/f26876bc-f17e-4127-9c31-61a1f4594d59" />
+
 
 
 ## 🏆 Key Features Showcase
